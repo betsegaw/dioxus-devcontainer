@@ -23,6 +23,8 @@ RUN curl -L --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/ca
 
 RUN cargo binstall dioxus-cli
 
+RUN rustup target add wasm32-unknown-unknown
+
 # Optionally, install Rust tools or crates
 # RUN cargo install <your-crate-here>
 
