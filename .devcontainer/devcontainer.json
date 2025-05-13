@@ -6,6 +6,15 @@
 	// "image": "mcr.microsoft.com/devcontainers/rust:1-1-bookworm"
 	"build": {
 		"dockerfile": "Dockerfile"
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/desktop-lite:1": {
+			"version": "latest",
+			"noVncVersion": "1.2.0",
+			"password": "codespaces",
+			"webPort": "6080",
+			"vncPort": "5901"
+		}
 	}
 
 	// Use 'mounts' to make the cargo cache persistent in a Docker Volume.
